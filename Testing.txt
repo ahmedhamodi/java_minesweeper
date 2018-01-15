@@ -1,0 +1,34 @@
+Due to the heavy reliance on GUIs for the Minesweeper game, it cannot be tested in JUnit.
+
+With this in mind, I had to think of a variety of other ways to insure that every method
+was working as expected.
+
+Here are some non-technical techniques I implemented:
+- Playing the game
+- Getting friends to play and review the game (different set of eyes)
+- Some things I looked out for:
+    - the ability to flag, and unflag squares
+    - the ability to still click (open) a flagged square
+    - when a bomb is clicked, the game ends and does not allow further clicking
+    - when reset is clicked, the game ends and a new grid is generated, alongside
+      the timer resetting
+    - when a new amount of bombs are specified, the game ends, a new grid is generated,
+      and a new amount of bombs are displayed on the screen
+    - when clicking the high scores button, a new GUI opens up, directly to the right
+      of the button
+    - that the numbers on the squares were accurate to the number of surrounding bombs
+    - that the recursive method opened up all the zeros, and the border
+    - among other technical aspects of the game
+
+Here are some technical techniques I implemented:
+- Heavily used tracing to understand where my program was reaching, and where it wasn't
+- Heavily used tracing to insure that variables were set to their correct values
+- Used a different coloured text for the bomb locations and the numbers surrounding it for
+  testing the functionality of my recusive method
+    - The background colour was gray, while the foreground colour was red during testing.
+      With my knowledge of Minesweeper I was able to predict how the grid should change,
+      and when it didn't work as expected I would review the code and my logic for the
+      recursive method
+
+Through the above techniques, I was able to effectively test the Minesweeper game, without
+the use of JUnit testing.

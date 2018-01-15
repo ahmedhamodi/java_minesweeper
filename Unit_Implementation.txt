@@ -1,0 +1,46 @@
+Project: Minesweeper
+Created by: Ahmed Hamodi
+
+Chapter 8 - Classes and Object-Oriented Development
+Implemented through:
+- "has-a relationship" (with the gameTimer, comboBoxListener, and buttonListener classes)
+- HighScoreTable class which is called and used in the MinesweeperGUI class
+- reusability and modular
+
+Chapter 9 - Inheritance and Polymorphism
+Implemented through:
+- extending the MouseAdaptor class
+- implementing ActionListener
+
+Chapter 10 - Arrays
+Implemented through:
+- the button 2D array (for the game board)
+- the boolean 2D array to prevent infinite recursion
+- the Comparable array list to compare high scores (quickest times)
+- consideration of the ArrayIndexOutOfBounds error, via a try-catch
+
+Chapter 11 - GUIs and Event-Driven Programming
+Implemented through:
+- The whole game framework is put onto a GUI
+- Use of JFrame, JPanel, JButton, JComboBox, and JLabel
+- Use of various layouts, including GridLayout and FlowLayout
+- Converted data from text to an integer (number of bombs changer)
+- Changed colours of various elements, including bombs (red) and flags (blue)
+- Added images for the win and lose screen
+
+Chapter 12 - Files and Exception Handling
+Implemented through:
+- Use of the try-catch-finally statement during recursion and counting of bombs
+- File reading:
+    - saving scores to a file
+    - reading scores off file when opening up game
+    - creates a file if no pre-existing file
+
+Chapter 13 - Recursion and Advanced Algorithms
+Implemented through:
+- Recursion to open up all non-numbered squares when one is clicked
+- Used a boolean 2D array to prevent infinite recursion from occuring
+- Various forms of algorithm analysis was used during the creation of the recusive method
+    - The recusive method is only 29 lines long now due to constant improvements
+- Sorting for the high score table - lists scores from fastest to slowest times
+- Used insertion sort on an array list of scores
